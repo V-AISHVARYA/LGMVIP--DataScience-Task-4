@@ -5,6 +5,7 @@ img=cv2.imread(img_location+filename)
 
 
 #convert to greyscale
+#images are read as NumPy arrays, and their channels are represented in BGR (Blue, Green, Red) order rather than the more common RGB (Red, Green, Blue) order
 gray_image=cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 #INVERT THE IMAGE
